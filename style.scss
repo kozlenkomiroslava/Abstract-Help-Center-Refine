@@ -94,7 +94,7 @@ main {
 
     h1 {
         margin-top: 25px;
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 300;
     }
 }
@@ -124,4 +124,44 @@ main {
         top: 50%;
         transform: translateY(-50%);
     }
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    column-gap: 80px;
+    row-gap: 60px;
+
+    padding: 100px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.image {
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.content a {
+    text-decoration: none;
+    color: rgb(0,148,197);
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+
+    background-color: black;
 }
